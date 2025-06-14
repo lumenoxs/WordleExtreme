@@ -189,10 +189,15 @@ function loop() {
 }
 loop();
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 (function CHEATS() {
     const msg = "%cCHEAT!!";
     const style = "color: red; font-size: 60px; font-weight: bold; text-shadow: 2px 2px black;";
     for (let i = 0; true; i++) {
         console.log(msg, style);
+        sleep(20)
     }
 })();
