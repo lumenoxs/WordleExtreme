@@ -5,6 +5,8 @@
 body {
     margin: 0;
     user-select: none;
+    pointer-events: none;
+    -webkit-touch-callout: none;
 }
 .font {
     font-family: "NYTKarnakCondensed", sans-serif;
