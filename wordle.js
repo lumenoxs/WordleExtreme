@@ -190,16 +190,9 @@ function loop() {
 loop();
 
 (function CHEATS() {
-  const detector = new Image();
-  Object.defineProperty(detector, 'id', {
-    get() {
-      const msg = "%cCHEAT!!";
-      const style = "color: red; font-size: 60px; font-weight: bold; text-shadow: 2px 2px black;";
-      for (let i = 0; true; i++) {
+    const msg = "%cCHEAT!!";
+    const style = "color: red; font-size: 60px; font-weight: bold; text-shadow: 2px 2px black;";
+    for (let i = 0; true; i++) {
         console.log(msg, style);
-      }
-      return 'detector';
     }
-  });
-  console.log(detector);
 })();
